@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Сантк-Петербург</title>
+    <meta name="viewport" content="width=device-width">
+  <link rel="website icon"  type="png" href="https://static.vecteezy.com/system/resources/previews/001/203/829/large_2x/eagle-logo-png.png"  >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+
+    body {
+    background:#F5F5DC;
+    }
+        .string {
+        background: #8B0000;
+        width:100%;
+        height:70px;
+        position:absolute;
+        top:0;
+        left:0;
+        position: fixed;
+        z-index:1;
+        }
+
+        .logo {
+        text-align:center;
+        position:absolute;
+        top:0%;
+        left:1%;
+        left:0;
+        right:0;
+        margin:0 auto;
+         z-index:1;
+         position: fixed;
+
+        }
+
+@media (max-width: 535px) {
+    .logo {
+        width:200px;
+        }
+}
+
+@media (max-width: 535px) {
+    .text {
+        font-size:20px;
+        }
+}
+
+@media (max-width: 273px) {
+    .text {
+        font-size:15px;
+        }
+}
+
+@media (max-width: 210px) {
+    .text {
+        font-size:10px;
+        }
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  z-index: 62;
+  position: fixed;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: #F5F5DC;
+  font-size: 29px;
+  text-decoration: none;
+
+}
+
+
+
+
+.q:hover {
+text-decoration: none;
+box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+color:black
+
+}
+
+.q {
+border-bottom:1px solid black;
+color:black;
+
+}
+
+
+.qq:hover {
+text-decoration: none;
+box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+color:black
+
+}
+
+.qq {
+color:white;
+
+}
+
+
+@media (max-width: 800px) {
+  .burger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(https://www.iconsdb.com/icons/preview/white/menu-4-xxl.png) no-repeat center center;
+    background-size: cover;
+    z-index: 2;
+    position: fixed;
+
+  }
+
+  .burger-icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -50%;
+    left: 0;
+    z-index: -1;
+  }
+
+  #burger-toggle {
+    display: none;
+  }
+
+  #burger-toggle:checked + .burger-icon {
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614394389_55-p-krest-na-temnom-fone-59.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:#8B0000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+  }
+
+  .menu ul li {
+    margin-bottom: 20px;
+  }
+
+  .menu ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+
+  }
+
+  .menu ul li a:hover {
+    background-color: #F5F5DC;
+  }
+
+  #burger-toggle:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+  }
+}
+
+#burger-toggle:checked + .burger-icon {
+  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614394389_55-p-krest-na-temnom-fone-59.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+        .text {
+        text-align:center;
+        border:0px solid black;
+        max-width:1110px;
+        font-size:19px;
+        position:absolute;
+        top:90px;
+        left:0;
+        right:0;
+        margin:0 auto;
+}
+
+
+        .text1 {
+        text-align:left;
+        border:0px solid black;
+        max-width:1110px;
+        font-size:25px;
+        position:absolute;
+        top:105%;
+        left:0;
+        right:0;
+        margin:0 auto;
+}
+
+
+
+
+.img1 {
+text-align:center;
+position:absolute;
+top:150px;
+left:0;
+right:0;
+margin:0 auto;
+}
+
+@media screen and (max-width: 395px) {
+  .img1 {
+   top:170px;
+  }
+  @media screen and (max-width: 238px) {
+  .img1 {
+   top:210px;
+  }
+
+
+  .img2 {
+text-align:center;
+position:absolute;
+top:150px;
+left:10px;
+right:0;
+margin:0 auto;
+}
+
+
+
+    </style>
+
+
+
+
+<div class="string">
+
+
+</div>
+
+<div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/203/829/large_2x/eagle-logo-png.png" alt="" width="200" height="65">
+
+    </div>
+
+<input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger-icon"></label>
+<nav class="menu">
+    <ul>
+        <li><a href="index.html" id="q" class="q">RUS</a></li>
+        <li><a href="index1.html" class="qq" >END</a></li>
+
+    </ul>
+</nav>
+
+
+<div class="text"><h2>История Санкт-Петербурга</h2></div>
+
+   <div class="img1">
+
+      <br><h5>ИМПЕРСКАЯ СТОЛИЦА</h5>
+           <div class="img2">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_653a6ac1197d77549862131e_653a7bacf6e2ca2650f83770/scale_1200" class="img-fluid"></div>
+ <div class="text1">
+1 мая 1703 года русские войска в ходе боевых действий Северной войны взяли шведскую крепость Ниеншанц (при впадении в Неву реки Охты). Военный совет во главе с Петром I решил, что эта крепость для дальнейшего укрепления не подходит: Ниеншанц «не гораздо крепок от натуры», как говорил сам царь. Кроме того, Ниеншанц был довольно далеко от моря, и у шведов оставалась возможность укрепиться на одном из островов дельты Невы. Русские тогда все равно оказались бы отрезанными от моря.
+<br><br>
+Самостоятельно обследовав острова дельты, Петр нашел именно то, что нужно: Заячий остров, расположенный у разветвления Невы на два рукава, недалеко от моря. Со всех сторон остров омывался водой, что стало бы естественной преградой в случае его штурма. С острова можно было держать под прицелом вражеские корабли, откуда бы они ни вошли в Неву.
+<br><br>
+16 (27) мая 1703 года, в день Св. Троицы, на острове заложили крепость. Именно этот день считается днем основания Санкт-Петербурга. Но имя свое крепость получила только 29 июня, когда, в Петров день, здесь заложили церковь Святых Петра и Павла. Петр назвал новую крепость «Санкт - Питербурх», это же имя получил и возникающий вокруг Заячьего острова город. Апостол Петр, по христианскому преданию, был хранителем ключей от рая, и это тоже казалось русскому царю символичным: город, носящий имя его небесного покровителя, должен был стать ключом от Балтийского моря. Только несколькими годами позже крепость стали называть Петропавловской - по названию ее главного собора.
+<br><br>
+План будущей крепости начертил сам Петр. Строить укрепления надо было очень быстро, чтобы успеть за короткое лето. И действительно, к осени 1703 года крепость была «вчерне закончена». В первые годы ее стены для ускорения насыпали из земли, возведение же каменных укреплений началось через три года - в 1706 году.
+<br><br>
+Сразу же после закладки крепости на берегу Невы за три дня был срублен деревянный дом для Петра. Царь захотел, чтобы его новое жилище походило на полюбившиеся ему голландские постройки, поэтому стены деревянного дома масляной краской расписали под кирпич. Петр жил в этом доме недолго и только летом, но в память об основателе Петербурга домик Петра сохранен до сегодняшнего дня.
+<br><br>
+Новый город начал расти рядом с крепостью на соседнем Березовом острове, этот остров даже стали называть Городским (теперь это Петроградская сторона). Уже в ноябре 1703 года здесь открылся первый храм города - в память о том, что крепость была заложена в день Святой Троицы, его тоже назвали Троицким. Перестроенный через несколько лет в камне, Троицкий собор некоторое время был главным храмом столицы. Именно здесь в 1721 году Петр I принял титул императора.
+<br><br>
+
+
+
+
+<strong>«ЗДЕСЬ ГРАДУ БЫТЬ»<br></strong>
+     <img src="https://i.ytimg.com/vi/3JHdPlfKu7A/maxresdefault.jpg" class="img-fluid"><br>
+
+<br>Петербург был основан в результате продуманного замысла Петра I и многих окружавших его людей. В конце апреля 1703 года царь, отыскивая место для будущей крепости, тщательнейшим образом осматривал побережье Невы. Он исследовал территорию не один, а в сопровождении различных специалистов. Основание крепостей в то время требовало рекогносцировки на местности, анализа чертежей, промеров глубин, обсуждения многих технических вопросов с фортификаторами, артиллеристами и моряками. Феофан Прокопович писал в своей «Истории императора Петра Великого», что царь, «сед на суда водныя, от фортеции Канцов по реке Невы береги и острова ея даже до морского устья прилежно разсуждати начал, не без совета и прочих в деле том искусных (людей)». Нам известно, что в свите Петра в то время были два специалиста-фортификатора: французский генерал-инженер Жозеф Гаспар Ламбер де Герэн и немецкий инженер В. А. Киршеншейн. Первый делал чертежи восстанавливаемой после штурма 1702 года крепости Нотебург-Шлиссельбург, рукой же второго сделаны два первых плана крепости на приневском островке. До самой своей смерти в 1705 году Киршеншейн руководил строительством Петропавловской крепости. Велика роль и Ламбера - продолжателя школы великого французского инженера Вобана. Не случайно, что осенью 1703 года Ламбер получил в награду орден Андрея Первозванного. Петр I никогда не был щедр на награждение высшим и единственным орденом России той эпохи. Возможно, так он особо отметил заслуги генерал-инженера при основании крепости на острове. Кроме того, после Азовских походов 1695-1696 годов царь и сам приобрел большой опыт в фортификации. Ведь тогда ему пришлось долго выбирать место для основания Таганрога, а также крепости Святой Петр в устье Дона. Неслучайно один из рабочих чертежей крепости на Заячьем острове сделан, как предполагают историки, рукою царя.
+<br><br>
+В ночь с 6 на 7 мая произошло еще одно памятное событие. Тридцать лодок с гвардейцами под командой Петра I и Меншикова напали на стоявшие в устье Невы шведские суда - шняву и бот - и взяли их на абордаж. В быстротечной рукопашной схватке участвовал не только Меншиков, но и сам русский самодержец. За этот подвиг государь был награжден орденом Святого Андрея Первозванного.
+    <br><br>
+
+
+     <style>
+         .footer {
+         background:#8B0000;
+         color:#F5F5DC;
+         text-align:center;
+         }
+
+         ul {
+   list-style: none;
+}
+li {
+left:0px;
+right:0;
+margin:0 auto;
+   text-align:center;
+   list-style: none;
+}
+
+p {
+
+         color:gray;
+
+     </style>
+
+
+<strong>«ВОСТОК» И «ЗАПАД»<br></strong>
+     <img src="https://luxoboi.com.ua/pic/product_foto/prodfoto6430.jpg" class="img-fluid"><br>
+<br>Основание новой столицы на западном рубеже государства было не только воплощением планов и идеалов основателя, но и определило всю дальнейшую судьбу города ив историко-политической реальности России, и в ее культурно-государственной мифологии. Начиная с этой эпохи, такие противоположные характеристики, как древнее/ новое, историческое / мифологическое, получали черты противопоставления концентрического/ эксцентрического, исконного / чужеземного. За этим противопоставлением тянулась антитеза двух коренных государственно-культурных моделей.
+<br><br>
+Между востоком и западом в культурной географии России неизменно выступают как насыщенные символы, опирающиеся на географическую реальность, но фактически императивно над ней властвующие. Характерно, что в русской литературе география становится одним из доминирующих художественных средств выражения. Так, например, в творчестве Достоевского развитие основных идей автора закономерно ведет к расширению географического пространства. В творчестве молодого Достоевского Петербург как бы охватывает собой все художественное пространство и, соответственно, получает право представлять собой Россию. В итоговом произведении - «Братьях Карамазовых» - Петербург воплощает в себе скорее болезнь России, ее «страхи и ужасы» (выражение Гоголя), - соответственно «выздоровление» мыслится как преодоление Россией в себе петербургского начала. Творчество Достоевского начинается как естественное развитие петербургского мифа и не менее связано с «петербургским пространством», чем «Медный всадник» Пушкина.
+<br><br>
+     <b>Также, можете посмотреть видео.</b>
+
+
+
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kURVR-27Ueg?si=oPrjkacfQkW0YdBN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+     <br>
+
+
+<div class="a"><br>
+    <h1>Контакты</h1><br>
+     <input type="text" placeholder="Имя:"><br><br>
+     <input type="email" placeholder="Почта:"><br><br>
+     <textarea name="message" id="message" cols="10" rows="4" placeholder="Сообщение:"></textarea><br><br>
+    <button type="submit">Отправить</button><br><br>
+</div>
+     <style>
+         img {
+         border-radius:10px;
+         }
+     </style>
+
+
+     <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Контакты</h2>
+<br>
+    <li>Телефон: <a href="tel:+79680086715">+7 968 008 6715</a></li>
+<li>Улыбайтесь</li>
+
+          <li>Почта: <a href="mailto:"tinminzhou@icloud.com">tinminzhou@icloud.com</a></li>
+<li>Чаще</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Социальные сети</h2>
+          <br>
+          <li><a href="https://vk.com/tszinmin"><img src="https://i.postimg.cc/BQJWqptB/IMG-0880.png" alt="Vk" width="60" height="50"></a></li>
+          <br>
+          <li><a href="https://o1o2o3o4o5o6o70"><img src="https://i.postimg.cc/yxcnDf6k/IMG-0884.png
+" alt="Telegram" width="60" height="50"></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+    <br><p>Сайт, созданный Чжоу Цзинь Мином, успешно вышел в свет 00 октября 2024 года. Если вам понравился ресурс, не стесняйтесь поделиться им!</p>
+</footer>
+</div>
+</div>
+
+<style>
+
+button {
+background:#F5F5DC;
+border-radius:20px;
+outline:none;
+border:none;
+}
+
+button:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.a {
+background:url('https://i.gifer.com/embedded/download/U1r0.gif');
+  position: relative;
+  background-position: center ;
+width:100%;
+text-align:center ;
+background-size: 1-0%;
+}
+
+input {
+background: transparent;
+width:400px;
+border:none;
+border-bottom:1px solid #F5F5DC;
+outline:none;
+color:#F5F5DC;
+}
+
+textarea {
+background: transparent;
+width:400px;
+border:none;
+border-bottom:1px solid white;
+outline:none;
+color:#F5F5DC;
+}
+
+h1 {
+color:#F5F5DC;
+}
+
+
+
+.searchBox {
+
+    position: absolute;
+    z-index:1;
+    top:5px;
+    left: 5px;
+    background: #F5F5DC;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    position:fixed
+
+}
+
+
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:right;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+<style>
+.searchBox {
+
+    position: absolute;
+    z-index:1;
+    top:5px;
+    left: 5px;
+    background: #F5F5DC;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    position:fixed
+
+}
+
+
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #F5F5DC;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:right;
+    padding: 0;
+    color: #8B0000;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 900px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+
+
+@media screen and (max-width:740px) {
+.searchBox:hover > .searchInput {
+    width: 100px;
+    padding: 0 6px;
+}
+
+@media screen and (max-width:515px) {
+.searchBox:hover > .searchInput {
+    width:50px;
+    padding: 0 6px;
+    font-size: 10px;
+}
+
+
+
+@media screen and (max-width:414px) {
+.searchBox:hover > .searchInput {
+    width:40px;
+    padding: 0 6px;
+    font-size: 7px;
+}
+
+@media screen and (max-width:414px) {
+.searchButton {
+   width: 30px;
+    height: 30px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:414px) {
+.searchBox {
+    top:15px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width:361px) {
+.searchBox:hover > .searchInput {
+    width:30px;
+    padding: 0 6px;
+    font-size: 5px;
+}
+
+@media screen and (max-width:361px) {
+.searchButton {
+   width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:361px) {
+.searchBox {
+    top:20px;
+    height: 40px;
+}
+
+}
+</style>
+
+</style>
+
+  <div class="searchBox">
+
+            <input class="searchInput"type="text" name="" placeholder="Искать">
+            <button class="searchButton" href="" ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" viewBox="0 0 512 512" version="1.1">
+  <g>
+    <g>
+      <path d="m304.7,10.9c-108.5,0-196.4,87.9-196.4,196.4 0,46.9 16.4,89.9 43.8,123.7l-135,135c-8,8-8,20.9 0,28.9 8,8 20.9,8 28.9,0l135-135c33.8,27.4 76.8,43.8 123.7,43.8 108.5,0 196.4-87.9 196.4-196.4s-88-196.4-196.4-196.4zm0,352c-85.9,0-155.6-69.7-155.6-155.6 0-85.9 69.7-155.6 155.6-155.6 85.9,0 155.6,69.7 155.6,155.6 5.68434e-14,85.9-69.7,155.6-155.6,155.6z"/>
+    </g>
+  </g>
+</svg>
+                <i class="material-icons">
+                </i>
+            </button>
+        </div>
+</head>
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>St. Petersburg</title>
+    <meta name="viewport" content="width=device-width">
+  <link rel="website icon"  type="png" href="https://static.vecteezy.com/system/resources/previews/001/203/829/large_2x/eagle-logo-png.png"  >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+
+    body {
+    background:#F5F5DC;
+    }
+        .string {
+        background: #8B0000;
+        width:100%;
+        height:70px;
+        position:absolute;
+        top:0;
+        left:0;
+        position: fixed;
+        z-index:1;
+        }
+
+        .logo {
+        text-align:center;
+        position:absolute;
+        top:0%;
+        left:1%;
+        left:0;
+        right:0;
+        margin:0 auto;
+         z-index:1;
+         position: fixed;
+
+        }
+
+@media (max-width: 535px) {
+    .logo {
+        width:200px;
+        }
+}
+
+@media (max-width: 535px) {
+    .text {
+        font-size:20px;
+        }
+}
+
+@media (max-width: 273px) {
+    .text {
+        font-size:15px;
+        }
+}
+
+@media (max-width: 210px) {
+    .text {
+        font-size:10px;
+        }
+}
+
+nav ul {
+  list-style: none;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  z-index: 62;
+  position: fixed;
+
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  padding: 10px;
+  color: #F5F5DC;
+  font-size: 29px;
+  text-decoration: none;
+
+}
+
+
+
+
+.q:hover {
+text-decoration: none;
+box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+color:black
+
+}
+
+.q {
+border-bottom:1px solid black;
+color:black;
+
+}
+
+
+.qq:hover {
+text-decoration: none;
+box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+color:black
+
+}
+
+.qq {
+color:white;
+
+}
+
+
+@media (max-width: 800px) {
+  .burger-icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(https://www.iconsdb.com/icons/preview/white/menu-4-xxl.png) no-repeat center center;
+    background-size: cover;
+    z-index: 2;
+    position: fixed;
+
+  }
+
+  .burger-icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 200%;
+    top: -50%;
+    left: 0;
+    z-index: -1;
+  }
+
+  #burger-toggle {
+    display: none;
+  }
+
+  #burger-toggle:checked + .burger-icon {
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614394389_55-p-krest-na-temnom-fone-59.jpg) no-repeat center center;
+    background-size: cover;
+  }
+
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background:#8B0000;
+    position: fixed;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+  }
+
+  .menu ul li {
+    margin-bottom: 20px;
+  }
+
+  .menu ul li a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+
+  }
+
+  .menu ul li a:hover {
+    background-color: #F5F5DC;
+  }
+
+  #burger-toggle:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+  }
+}
+
+#burger-toggle:checked + .burger-icon {
+  background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614394389_55-p-krest-na-temnom-fone-59.jpg) no-repeat center center;
+  background-size: cover;
+}
+
+
+
+        .text {
+        text-align:center;
+        border:0px solid black;
+        max-width:1110px;
+        font-size:19px;
+        position:absolute;
+        top:90px;
+        left:0;
+        right:0;
+        margin:0 auto;
+}
+
+
+        .text1 {
+        text-align:left;
+        border:0px solid black;
+        max-width:1110px;
+        font-size:25px;
+        position:absolute;
+        top:105%;
+        left:0;
+        right:0;
+        margin:0 auto;
+}
+
+
+
+
+.img1 {
+text-align:center;
+position:absolute;
+top:150px;
+left:0;
+right:0;
+margin:0 auto;
+}
+
+@media screen and (max-width: 395px) {
+  .img1 {
+   top:170px;
+  }
+  @media screen and (max-width: 238px) {
+  .img1 {
+   top:210px;
+  }
+
+
+  .img2 {
+text-align:center;
+position:absolute;
+top:150px;
+left:10px;
+right:0;
+margin:0 auto;
+}
+
+
+
+    </style>
+
+
+
+
+<div class="string">
+
+
+</div>
+
+<div class="logo">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/203/829/large_2x/eagle-logo-png.png" alt="" width="200" height="65">
+
+    </div>
+
+<input type="checkbox" id="burger-toggle">
+  <label for="burger-toggle" class="burger-icon"></label>
+<nav class="menu">
+    <ul>
+        <li><a href="index.html" id="qq" class="qq">RUS</a></li>
+        <li><a href="index1.html" id="q" class="q" >END</a></li>
+
+    </ul>
+</nav>
+
+
+<div class="text"><h2>History of St. Petersburg</h2></div>
+
+   <div class="img1">
+
+      <br><h5>IMPERIAL CAPITAL</h5>
+           <div class="img2">
+            <img src="https://avatars.dzeninfra.ru/get-zen_doc/271828/pub_653a6ac1197d77549862131e_653a7bacf6e2ca2650f83770/scale_1200" class="img-fluid"></div>
+ <div class="text1">
+On May 1, 1703, during the fighting of the Northern War, Russian troops took the Swedish fortress of Nyenschanz (at the confluence of the Okhta River with the Neva). The military council headed by Peter I decided that this fortress was not suitable for further strengthening: Nyenschanz “is not much strong by nature,” as the tsar himself said. In addition, Nyenschanz was quite far from the sea, and the Swedes still had the opportunity to fortify themselves on one of the islands of the Neva delta. The Russians would then still be cut off from the sea.<br><br>
+Having independently examined the islands of the delta, Peter found exactly what he needed: Hare Island, located at the fork of the Neva into two branches, not far from the sea. The island was washed on all sides by water, which would have become a natural barrier in the event of an assault. From the island it was possible to keep enemy ships at gunpoint, no matter where they entered the Neva.<br><br>
+On May 16 (27), 1703, on the day of the Holy Trinity, a fortress was founded on the island. This day is considered the founding day of St. Petersburg. But the fortress received its name only on June 29, when, on Peter’s Day, the Church of Saints Peter and Paul was founded here. Peter named the new fortress “St. Petersburg,” and the city emerging around Hare Island received the same name. The Apostle Peter, according to Christian tradition, was the keeper of the keys to heaven, and this also seemed symbolic to the Russian Tsar: the city bearing the name of his heavenly patron was supposed to become the key to the Baltic Sea. Only a few years later the fortress began to be called Peter and Paul fortress - after the name of its main cathedral.<br><br>
+The plan for the future fortress was drawn by Peter himself. The fortifications had to be built very quickly in order to be completed in a short summer. And indeed, by the autumn of 1703 the fortress was “roughly finished.” In the first years, its walls were poured out of earth to speed it up, but the construction of stone fortifications began three years later - in 1706.<br><br>
+Immediately after the foundation of the fortress on the banks of the Neva, a wooden house for Peter was cut down in three days. The king wanted his new home to resemble the Dutch buildings he loved, so the walls of the wooden house were painted with oil paint to resemble brick. Peter lived in this house for a short time and only in the summer, but in memory of the founder of St. Petersburg, Peter’s house has been preserved to this day.<br><br>
+The new city began to grow next to the fortress on the neighboring Berezov Island; this island even began to be called Gorodsky (now it is the Petrograd side). Already in November 1703, the first church of the city was opened here - in memory of the fact that the fortress was founded on the day of the Holy Trinity, it was also called Trinity. Rebuilt a few years later in stone, the Trinity Cathedral was for some time the main temple of the capital. It was here in 1721 that Peter I took the title of emperor.<br><br>
+
+
+
+
+<strong>“THE CITY IS HERE TO BE”<br></strong>
+     <img src="https://i.ytimg.com/vi/3JHdPlfKu7A/maxresdefault.jpg" class="img-fluid"><br>
+
+<br>St. Petersburg was founded as a result of a thoughtful plan of Peter I and many people around him. At the end of April 1703, the Tsar, looking for a place for a future fortress, carefully examined the coast of the Neva. He explored the territory not alone, but accompanied by various specialists. The establishment of fortresses at that time required reconnaissance on the ground, analysis of drawings, depth measurements, and discussion of many technical issues with fortifiers, artillerymen and sailors. Feofan Prokopovich wrote in his “History of Emperor Peter the Great” that the tsar, “sat on water vessels, from the Kantsov fortress along the Neva River, take care of its islands even to the sea mouth, and began diligently to reason, not without the advice of others skilled in the matter (people )". We know that Peter’s retinue at that time included two fortification specialists: the French general engineer Joseph Gaspard Lambert de Guerin and the German engineer V. A. Kirschenshein. The first made drawings of the Noteburg-Shlisselburg fortress being restored after the assault of 1702, while the second made the first two plans for the fortress on the Neva island. Until his death in 1705, Kirshenshein supervised the construction of the Peter and Paul Fortress. The role of Lambert, a successor to the school of the great French engineer Vauban, is also great. It is no coincidence that in the fall of 1703 Lambert received the Order of St. Andrew the First-Called as a reward. Peter I was never generous in awarding the highest and only order of Russia of that era. Perhaps this is how he especially noted the services of the general engineer in founding the fortress on the island. In addition, after the Azov campaigns of 1695-1696, the tsar himself acquired extensive experience in fortification. After all, then he had to choose a place for a long time to found Taganrog, as well as the St. Peter fortress at the mouth of the Don. It is no coincidence that one of the working drawings of the fortress on Hare Island was made, as historians suggest, by the hand of the king.<br><br>
+On the night of May 6–7, another memorable event occurred. Thirty boats with guardsmen under the command of Peter I and Menshikov attacked the Swedish ships standing at the mouth of the Neva - a shnyava and a boat - and boarded them. Not only Menshikov, but also the Russian autocrat himself took part in the fast-paced hand-to-hand combat. For this feat, the sovereign was awarded the Order of St. Andrew the First-Called    <br><br>
+
+
+     <style>
+         .footer {
+         background:#8B0000;
+         color:#F5F5DC;
+         text-align:center;
+         }
+
+         ul {
+   list-style: none;
+}
+li {
+left:0px;
+right:0;
+margin:0 auto;
+   text-align:center;
+   list-style: none;
+}
+
+p {
+
+         color:gray;
+
+     </style>
+
+
+<strong>“EAST” AND “WEST”<br></strong>
+     <img src="https://luxoboi.com.ua/pic/product_foto/prodfoto6430.jpg" class="img-fluid"><br>
+<br>The founding of a new capital on the western border of the state was not only the embodiment of the plans and ideals of the founder, but also determined the entire future fate of the city in the historical and political reality of Russia, and in its cultural and state mythology. Starting from this era, such opposing characteristics as ancient/new, historical/mythological, received features of the opposition concentric/eccentric, primordial/foreign. Behind this opposition was the antithesis of two indigenous state-cultural models.<br><br>
+Between East and West in the cultural geography of Russia invariably appear as rich symbols, based on geographical reality, but in fact imperatively ruling over it. It is characteristic that in Russian literature geography becomes one of the dominant artistic means of expression. For example, in Dostoevsky’s work, the development of the author’s basic ideas naturally leads to an expansion of geographical space. In the work of the young Dostoevsky, St. Petersburg, as it were, embraces the entire artistic space and, accordingly, receives the right to represent Russia. In the final work - “The Brothers Karamazov” - Petersburg rather embodies the illness of Russia, its “fears and horrors” (Gogol’s expression); accordingly, “recovery” is thought of as Russia overcoming the Petersburg origin within itself. Dostoevsky’s work begins as a natural development of the St. Petersburg myth and is no less connected with the “St. Petersburg space” than Pushkin’s “The Bronze Horseman.”<br><br>
+     <b>Also, you can watch the video.</b>
+
+
+
+
+
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/kURVR-27Ueg?si=oPrjkacfQkW0YdBN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+     <br>
+
+
+<div class="a"><br>
+    <h1>Contacts</h1><br>
+     <input type="text" placeholder="Name:"><br><br>
+     <input type="email" placeholder="Mail:"><br><br>
+     <textarea name="message" id="message" cols="10" rows="4" placeholder="Message:"></textarea><br><br>
+    <button type="submit">Send</button><br><br>
+</div>
+     <style>
+         img {
+         border-radius:10px;
+         }
+     </style>
+
+
+     <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>Contacts</h2>
+<br>
+    <li>Phone: <a href="tel:+79680086715">+7 968 008 6715</a></li>
+<li>Smile</li>
+
+          <li>Mail: <a href="mailto:"tinminzhou@icloud.com">tinminzhou@icloud.com</a></li>
+<li>More often</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2>Social media</h2>
+          <br>
+          <li><a href="https://vk.com/tszinmin"><img src="https://i.postimg.cc/BQJWqptB/IMG-0880.png" alt="Vk" width="60" height="50"></a></li>
+          <br>
+          <li><a href="https://o1o2o3o4o5o6o70"><img src="https://i.postimg.cc/yxcnDf6k/IMG-0884.png
+" alt="Telegram" width="60" height="50"></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+    <br><p>The website created by Zhou Jin Ming was successfully launched on October 00, 2024. If you liked the resource, feel free to share it!</p>
+</footer>
+</div>
+</div>
+
+<style>
+
+button {
+background:#F5F5DC;
+border-radius:20px;
+outline:none;
+border:none;
+}
+
+button:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+button:active {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.a {
+background:url('https://i.gifer.com/embedded/download/U1r0.gif');
+  position: relative;
+  background-position: center ;
+width:100%;
+text-align:center ;
+background-size: 1-0%;
+}
+
+input {
+background: transparent;
+width:400px;
+border:none;
+border-bottom:1px solid #F5F5DC;
+outline:none;
+color:#F5F5DC;
+}
+
+textarea {
+background: transparent;
+width:400px;
+border:none;
+border-bottom:1px solid white;
+outline:none;
+color:#F5F5DC;
+}
+
+h1 {
+color:#F5F5DC;
+}
+
+
+
+.searchBox {
+
+    position: absolute;
+    z-index:1;
+    top:5px;
+    left: 5px;
+    background: #F5F5DC;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    position:fixed
+
+}
+
+
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #2f3640;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:right;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+<style>
+.searchBox {
+
+    position: absolute;
+    z-index:1;
+    top:5px;
+    left: 5px;
+    background: #F5F5DC;
+    height: 60px;
+    border-radius: 40px;
+    padding: 10px;
+    position:fixed
+
+}
+
+
+
+.searchBox:hover > .searchInput {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.searchBox:hover > .searchButton {
+  background: white;
+  color : #F5F5DC;
+}
+
+.searchButton {
+    color: white;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:#F5F5DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+.searchInput {
+    border:none;
+    background: none;
+    outline:none;
+    float:right;
+    padding: 0;
+    color: #8B0000;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+
+}
+
+@media screen and (max-width: 900px) {
+.searchBox:hover > .searchInput {
+    width: 150px;
+    padding: 0 6px;
+}
+
+
+@media screen and (max-width:740px) {
+.searchBox:hover > .searchInput {
+    width: 100px;
+    padding: 0 6px;
+}
+
+@media screen and (max-width:515px) {
+.searchBox:hover > .searchInput {
+    width:50px;
+    padding: 0 6px;
+    font-size: 10px;
+}
+
+
+
+@media screen and (max-width:414px) {
+.searchBox:hover > .searchInput {
+    width:40px;
+    padding: 0 6px;
+    font-size: 7px;
+}
+
+@media screen and (max-width:414px) {
+.searchButton {
+   width: 30px;
+    height: 30px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:414px) {
+.searchBox {
+    top:15px;
+    height: 50px;
+}
+
+
+
+@media screen and (max-width:361px) {
+.searchBox:hover > .searchInput {
+    width:30px;
+    padding: 0 6px;
+    font-size: 5px;
+}
+
+@media screen and (max-width:361px) {
+.searchButton {
+   width: 20px;
+    height: 20px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:361px) {
+.searchBox {
+    top:20px;
+    height: 40px;
+}
+
+}
+</style>
+
+</style>
+
+  <div class="searchBox">
+
+            <input class="searchInput"type="text" name="" placeholder="Search">
+            <button class="searchButton" href="" ><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 512 512" viewBox="0 0 512 512" version="1.1">
+  <g>
+    <g>
+      <path d="m304.7,10.9c-108.5,0-196.4,87.9-196.4,196.4 0,46.9 16.4,89.9 43.8,123.7l-135,135c-8,8-8,20.9 0,28.9 8,8 20.9,8 28.9,0l135-135c33.8,27.4 76.8,43.8 123.7,43.8 108.5,0 196.4-87.9 196.4-196.4s-88-196.4-196.4-196.4zm0,352c-85.9,0-155.6-69.7-155.6-155.6 0-85.9 69.7-155.6 155.6-155.6 85.9,0 155.6,69.7 155.6,155.6 5.68434e-14,85.9-69.7,155.6-155.6,155.6z"/>
+    </g>
+  </g>
+</svg>
+                <i class="material-icons">
+                </i>
+            </button>
+        </div>
+</head>
+
+
+</body>
+</html>
+
+
+
